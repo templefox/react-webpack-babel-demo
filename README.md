@@ -11,8 +11,18 @@
 
 ## Requirements
     npm
-    npm install webpack-dev-server --global
-    npm install webpack --global
+    webpack
+    webpack-dev-server
+
+## Setup
+
+
+### Using npm install
+    git clone ...
+    npm install
+
+### Install modules step by step
+    git clone ...
     npm install webpack --save-dev
     npm install babel-loader --save-dev
     npm install react --save
@@ -23,21 +33,15 @@
     npm install file-loader --save-dev      //For copying .html
     npm install webpack-dev-server --save-dev   //For testing
 
-## Setup
-    git clone ...    
-    npm install webpack --save-dev
-    npm install babel-loader --save-dev
-    npm install react --save
-    
-    npm install babel-preset-es2015 --save-dev
-    npm install babel-preset-react --save-dev
-    
-    npm install file-loader --save-dev      //For copying .html
-    npm install webpack-dev-server --save-dev   //For testing
-    
+### Run
     webpack
     webpack-dev-server
-    http://localhost:8080/app
+    
+    or
+
+    npm start
+
+    visit http://localhost:8080/app
     
 ##Reference
     [link](https://robots.thoughtbot.com/setting-up-webpack-for-react-and-hot-module-replacement)
