@@ -1,7 +1,16 @@
-import React from "react";
-import Greeting from "./greeting";
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import App from './containers/App'
+import configureStore from './store/configureStore'
+import 'todomvc-app-css/index.css'
 
-React.render(
-  <Greeting name="World"/>,
-  document.body
-);
+const store = configureStore()
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
